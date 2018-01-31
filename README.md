@@ -4,9 +4,9 @@ This repository hosts all CPS Coin related techincal documents.
 
 ## Technical White Paper
 
-### English
+### English Technical White Paper
 
-### Chinese (Simplified)
+### [Chinese (Simplified) Technical White Paper 简体中文版技术白皮书](tech_whitepaper.chs.md) 
 
 ## Business White Paper
 
