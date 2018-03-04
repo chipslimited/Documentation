@@ -1,6 +1,14 @@
 # CPS Coin Technical White Paper
 
+March 2018 ver 2.01
+
 Copyright © 2018 Chips Limited
+
+Note: Any person could use this whitepaper for non-commercial usage, as long as the copyright statement is mentioned.
+
+# Disclaimer
+This technical whitepaper is 
+
 
 
 # Introduction
