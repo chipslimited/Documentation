@@ -4,10 +4,10 @@ March 2018 ver 2.01
 
 Copyright © 2018 Chips Limited
 
-Note: Any person could use this whitepaper for non-commercial usage, as long as the copyright statement is mentioned.
+Note: Any individual could use this whitepaper for non-commercial purpose, as long as the copyright statement is mentioned.
 
 # Disclaimer
-This technical whitepaper is 
+This technical whitepaper is for informational purpose only. It does not constitute investment advice. No individual or organization may use this whitepaper for commercial purpose.
 
 
 
