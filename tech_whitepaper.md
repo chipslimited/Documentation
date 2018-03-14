@@ -9,6 +9,7 @@ Note: Any individual could use this whitepaper for non-commercial purpose, as lo
 # Disclaimer
 This technical whitepaper is for informational purpose only. It does not constitute investment advice. No individual or organization may use this whitepaper for commercial purpose.
 
+1. Although the CPS team (hereinafter, "the team") is making the b
 
 
 # Introduction
