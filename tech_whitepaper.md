@@ -9,7 +9,9 @@ Note: Any individual could use this whitepaper for non-commercial purpose, as lo
 # Disclaimer
 This technical whitepaper is for informational purpose only. It does not constitute investment advice. No individual or organization may use this whitepaper for commercial purpose.
 
-1. Although the CPS team (hereinafter, "the team") is making the b
+1. Although the CPS team (hereinafter, "the team")  did its best to make the contents of this white paper reflect the design and implementation of the system as accurately as possible, due to the continuous evolution of the technical code of the project, this white paper does not guarantee that the code is completely consistent with the actually provided service. Alo, the team does not guarantee that the white paper reflects the changes in the code in real time.
+
+1. As a free open source project, the team does not guarantee the accuracy of the released code and the services provided. This project is only released "as is". The team's default users of this white paper and this code base have sufficient legal knowledge, technical knowledge, and development capabilities to ensure the correctness and safe operation of the code. The team will not be liable for any loss caused by using this project code. These losses include, but are not limited to, direct and indirect losses due to the inability to achieve an expected goal. * Direct or indirect loss due to inconsistency between this white paper and the code or logic of this code base. * Because of this code base or this code base Direct or indirect damages caused by errors or bugs of related services* Direct and indirect losses caused by infringement of third parties due to this White Paper, this code base, and the services associated with this code base
 
 
 # Introduction
