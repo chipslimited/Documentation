@@ -20,7 +20,7 @@ This white paper is intended to convey technology-related information only and d
 
 3. This white paper, this code base, and the services associated with this code base do not constitute any investment advice. Any individual or team, without authorization, may not use any name of the team, members of this team, this white paper author and contributors, white papers, and this code base for any form of marketing. No individual or team, without authorization, may not publish false information about the team, the team members, the white paper writer and contributors, and the third party team.
 
-4. __"CPS Coin" means "CPS Token" or "CPS Token" without any right, purpose, property, function or characteristic, explicit or implicit. __
+4. __"CPS Coin" means "CPS Token" or "CPS Token" without any right, purpose, property, function or characteristic, explicit or implicit.__
 
 5. The words "to be", "to be", and "possible" in this white paper only represent functional or performance predictability or design ideas, not as a team commitment.
 
