@@ -1,7 +1,6 @@
 # CPS Technology White Paper
 
-__March 2018 ver 2.01
-__
+March 2018 ver 2.01
 
 Copyright © 2018 Chips Limited
 
@@ -12,7 +11,8 @@ This white paper is intended to convey technology-related information only and d
 
 1. Although the CPS team (hereinafter, "the team") does its utmost to make the contents of this white paper as accurate as possible in the design and implementation of the system, this white paper does not guarantee the release of the code or services provided because the technical code of the project is continuously evolving. Also, the team does not guarantee that the white paper reflects the changes in the code in real time.
 
-2. As a free open source project, the team does not guarantee the accuracy of the released code and the services provided. __This project is only released "as is". __ The team defaults readers of this white paper and users of this code base have sufficient legal knowledge, technical knowledge and development capabilities to ensure the correct and safe operation of the code. __ The team shall not be liable for any loss caused by using this project code. __ These losses include, but are not limited to:
+2. As a free open source project, the team does not guarantee the accuracy of the released code and the services provided. __This project is only released "as is".__ The team defaults readers of this white paper and users of this code base have sufficient legal knowledge, technical knowledge and development capabilities to ensure the correct and safe operation of the code. __The team shall not be liable for any loss caused by using this project code.__ These losses include, but are not limited to:
+
     * Direct or indirect losses due to failure to achieve an expected goal
     * Direct or indirect losses due to inconsistency in code or logic between this white paper and this code base
     * Direct or indirect losses due to errors or bugs in this code base or services related to this code base
@@ -56,19 +56,27 @@ In a nutshell, IPFS is similar to the distributed file system of some commonly u
 ## Graphene
 Graphene is a set of blockchain tools. It was developed by the BitShares team Cryptonomex and written in C++. The main advantage of "graphene" is its ability to perform concurrently. The graphene-based BTS and STEEM can reduce the average single transaction speed to 1.5 seconds and achieve a data throughput of 3,300 transactions per second with limited hardware resources. The key reason for this is that graphene can achieve higher performance through parallel chains.
 
-# technical background
+# Technical background
 The first generation of blockchain technology Bitcoin (BTC) realized a trusted distributed ledger and Ethereum of the second generation of blockchain technology realized smart contracts based on trusted ledgers. In the world of smart contracts, the rights and historical records of assets will be recorded in an open, credible and effective manner. At the same time, the “full nodes” and “miners” of smart contracts ensure that smart contracts are enforced and enforced effectively. This kind of selfless executive force makes users have higher expectation of the function, reliability and efficiency of the blockchain system. Thus, the existing blockchain system exposes the following limitations in the face of higher expectations:
+
 1. Functional limitations: Both are only suitable for building functions that are centered around "transactions", such as billing, voting, and signatures. However, the use of blockchains in other areas is stretched.
+
 2. Computational Capabilities: There are limited instruction sets supported by smart contracts.
+
 3. Storage capacity limitation: The blockchain cannot store more information (otherwise it will face higher transaction procedures. And the data storage speed is slower. A reference value is 7 seconds/KB.
+
 4. Cannot be highly scaled: The operating mechanism of existing mainstream blockchains has greatly limited the benefits of “distributed”. Since smart contracts must run synchronously on each node, no matter how many distributed nodes the blockchain runs, its performance is essentially equivalent to a single node. This makes it impossible for a single main chain to support individual applications, not to mention supporting the ever-growing masses of applications in the future.
+
 5. High fees: Bitcoin and Ethereum have lower unit prices when they come out, and there is no pre-judgment of the issue of rising fees. Bitcoin's handling fee does not take into account small payments. Some other blockchains have similar problems.
+
 6. Dust attack: Spam data and invalid data will have many negative effects on the operational efficiency of the blockchain. Occasional Bitcoin transfer confirmation time is long, Ethereum's congestion and other conditions can prove this point.
+
 7. Tight coupling: The blockchain backbone network is tightly coupled with the virtual machine and cannot represent the “layering” in the context of software engineering.
 
 To sum up, the first-generation blockchain represented by Bitcoin and the second-generation blockchain represented by Ethereum cannot solve the ever-increasing user demand. Therefore, the blockchain world needs better solutions.
 
 # Technology Development Target
+
 The platform is dedicated to creating a system with the following features:
 1. Number of Users Supporting Massive Users: Large-scale systems such as Baidu, Tencent, Google, and Amazon need to provide robust system support for hundreds of millions of users. Considering Metcalf's law (Metcalf's law: the value of a system is proportional to the square of its number of users), the system will have a strong continuity over time.
 1. Parallel computing: Whether it is a stand-alone multi-threaded, multi-core CPU, or a network-based high concurrency, the system needs to provide a mechanism for dispatching tasks.
@@ -90,7 +98,7 @@ Although the technical implementation details of the virtual machine and the des
 We recognizes that many different applications require the same types of functionalities, such as implementations of the cryptography and  communication tools. Keeping that in mind, we will feature the introduction of generalized role-based permissions, a web toolkit for interface development, self-describing interfaces, self-describing database schemes, and a declarative permission scheme. As a result, these functionalities will be especially powerful for simplifying user account generation and management, as well as security issues like declarative permissions and account recovery.
 
 
-## storage
+## Storage
 ### Distributed Storage
 CPS Coin Storage is an exploratory, decentralized file system where users can store and host files that can be accessed by mainstream browsers. We know that there are some other options that charge initial fees, or charge based on the time or bandwidth of the stored file. However, this scheme will not adopt this model. This plan will only charge a fully refundable deposit. Users need to hold tokens when they need storage and bandwidth. Of course, they can resell tokens when storage and bandwidth are not needed. The producer of the block (similar to "mining") will serve the holder of the token, thus forming an incentive mechanism to ensure the formation of a closed loop.
 
@@ -123,7 +131,7 @@ Regular trading (combining free trading) makes CPS's smart contract a Turing com
 ### Message Delivery
 For the news on the Internet, we always have some concerns when we receive it. The message may be invalid or it may not be completed within the time limit of the current transaction. In addition, sometimes we will need to include information outside the current trading range in a message. In the above case, the application can request the producer of the block to issue a message in the next block or later (similar to the asynchronous mechanism) so that if the message is valid, then the application will receive a notification; otherwise, the message will not. Will be issued, and the message will be cleared by the application after timeout.
 
-## consensus algorithm
+## Consensus Algorithm
 ### Based on the incremental mechanism of DPOS (authorized equity certificate)
 In order to achieve higher performance and efficiency, the system uses a DPOS algorithm similar to EOS.
 
@@ -132,21 +140,22 @@ DPOS is a continuous voting mechanism. Under this mechanism, the owner of the to
 The greatest advantage of DPOS is that it can be operated by a relatively small number of processors without causing network security problems. Because of the traditional POW blockchain, the security of the network and application depends heavily on the results of the hash value, and this result will consume a lot of computing power. Although the design of the POW has guaranteed the security and robustness of the network, it has brought difficulties to newly-entered developers. Of course, developers also have other concerns about DPOS.
 
 
-## Account System
+## User Account System
+
 The system has a perfect account system. The creator of the account can select a certain length and human-readable string as the name. This is greatly improved compared to Bitcoin, Ethereum, which has only the private key and address concept of the account system. The feasibility of sex and large-scale commercial use. The registration of an account requires only a very low cost and can bear the cost of storing account information. At the same time, the account name supports the namespace, so the owner of the "domain name" is the only user who can create "account name@domain name".
 
 ### Role-Based Rights Management
 The simplest form of determining whether a message is authorized is to include a signature. By signing, we can know that the message is "who authorized" and "what rights were granted." In general, permissions are tied to individuals or groups. The multi-account control mechanism can guarantee the security of the account and reduce the risk of financial losses caused by the account being hacked.
 
-### Authorization delay
+### Delayed Authorization
 The key to safety is time. For example, if we are under telecom fraud online, if our bank transfer system has a certain delay, then we can at least increase the probability that the money will be recovered before it is transferred. The CPS system enables users to configure different delays according to different privilege levels. For example, sending microblogging to social media can be an immediate authorization, and transfer authorization may require a delay of one day or more. When the user attempts to perform an operation that requires delay, the transaction will be packaged and postponed until the delay deadline. And the transaction can be cancelled during this period.
 
-### Forgot password recovery
-Users often forget the password. The system's password recovery mechanism can relieve users of this concern to a certain extent. Each account can specify some recovery partners that can update the activity rights, but only if the user's account is inactive for 30 days. As long as the user specifies some accounts as recovery partners (generally friends and family), then even if the user loses the key, ta can still recover the ownership of the account. Then the user no longer has to worry about the account being locked.
+### Password Recovery
+Users tend to forget passwords. The system's password recovery mechanism can relieve users of this concern to a certain extent. Each account can specify some recovery partners that can update the activity rights, but only if the user's account is inactive for 30 days. As long as the user specifies some accounts as recovery partners (generally friends and family), then even if the user loses the key, ta can still recover the ownership of the account. Then the user no longer has to worry about the account being locked.
 
 By combining social networking, time delays, and cryptography, it is possible for users to regain ownership of lost accounts, so that CPS has established a trust network that protects all users' property rights.
 
-### Recovery of Blacked Accounts
+### Recovery of Hacked Accounts
 Each account has three special rights: owner rights, activity rights, and recovery rights. The owner permissions should be configured as multiple private keys and have the right to change all other permissions. The use of the owner's rights will require that the user and his recovery partner (usually the user's most trusted friend or relative) agree at the same time. In practice, this forms a trust network among all users, which greatly reduces the probability of successful intrusion by hackers, because hackers only need to invade an account before, but now they need to intrude into the entire network.
 
 In the other case: If the recovery partner decides not to authorize, the user may also choose to delay the 30-day update of the owner's permission. (It takes at least 30 days between two times to update owner rights, not too often to protect security.)
@@ -159,7 +168,7 @@ For an internet platform, scalability is crucial. A key limitation of version 2.
 
 In terms of scalability, this system has two significant advantages: First, we will draw on the graphene technology of EOS, which has been proven in stress tests, with 10,000 to 100,000 transaction processing per second. Second, the system will use parallelization to extend the network, or will reach transaction processing capacity of millions of times per second, which will support thousands of enterprise-level DAPPs. The system will also use asynchronous communication and separate the authentication and execution process to achieve acceleration.
 
-### Parallel
+### Parallelism
 As mentioned earlier, the computational power of any one chain built with the current mainstream blockchain technology is not higher than that of a single computer (even if the performance of this computer is very strong), which obviously cannot adapt to the multiple application requirements at the Internet level. It is also the fundamental reason why blockchain technology is still not widely used in other areas of the Internet until today (such as the Ethernet congestion caused by cats). Consistent with some other blockchain 3.0, this team also believes that the development of blockchain should abandon the main chain thinking.
 
 The so-called abandonment of the main-chain thinking does not mean giving up the main chain. The main chain still exists, but the main chain is purer - the main chain infrastructure only provides trusted services for upper applications, such as account number, storage, communication, transaction confirmation, and limits the execution of smart contracts. In other words, we "reduce our burden" on the main chain.
@@ -169,7 +178,7 @@ Because the system gives users proportional network bandwidth, storage space, an
 
 ## Token Models and Resource Usage
 
-### Who uses and who pays
+### Users Pay
 In general, payment servers, bandwidth, and other resources needed to run the business require costs. Customers purchase specific products or services from merchants whose sales revenue is used to pay for costs.
 
 In the Internet world, most websites do not require ordinary visitors to pay, (even if there is one more visitor, the site will need to pay an additional hosting fee). By the same token, DApps should not force their customers to pay directly and use blockchains.
@@ -181,30 +190,23 @@ In short, DApps on CPS generally do not require their users to directly pay for 
 ### Sale of Remaining Resources/Sharing Economy
 Since the CPS Coin holder holds the token, it means that it has a corresponding proportion of resources. But in most cases, they will not immediately need to occupy all of the available resources. There will always be some surplus. At this time, the holders of CPS Coin can provide or rent these unconsumed resources (such as bandwidth) to other users for effective use of resources.
 
-### bonus system
+### Bonus System
 The system will grant the producer a new token (ie CPS Coin) each time a block is created. In this case, the number of tokens created is determined by the median of the expected returns announced by all block producers. The CPS system is configurable to reward producers for enforcement caps such that the total annual growth in token supply does not exceed a maximum increase to avoid inflation.
 
-### Stable transaction costs
+### Stable Transaction Costs
 Due to the recent volatility in the currency market, issues related to transaction costs have once again surfaced. If the price of the token rises too much in the short term, then the user may not be willing to use the service, but instead direct the money. One of the main advantages of this system is that the resources available to DApp are completely independent of the price of CPS Coin. If an application developer or operator holds the corresponding CPS Coin on the blockchain, the application can run indefinitely under fixed conditions and bandwidth usage. In this case, developers and users will not be affected by any price fluctuations in the token market.
 
 The block producer token is granted each time the system generates a block. The value of the token will affect the power, bandwidth, and storage that the producer can purchase; the higher the token price, the more active the person who is willing to provide power, bandwidth, and storage, thereby improving overall network performance.
 
 ## Incentives: stakeholder v.s. consumer
 
-
 With Ethereum, gas fees are required in exchange for every calculation, storage operation, and bandwidth utilization. Secondly, the required fees fluctuate and can spike prohibitively high as miners preferentially select transactions with the largest fees. This was especially obvious during recent cases, in which $100 gas fees were still not enough even for trivial transactions. Furthermore, this economic model creates a scenario where the rich can potentially freeze the entire network by flooding it with high-fee transactions. Thirdly, this model requires developers and startups to continuously burn gas fees throughout development and deployment of their applications.
-
-
-
-
 
 In contrast, CPS will utilize an ownership model, in which holding CPS Coin gives users a proportional share in the network bandwidth, storage, and computing power. This means that if someone owns 1% of the CPS Coin, they will always have access to 1% of the network bandwidth, regardless of the load on the rest of the network. In this way, small startups and developers can purchase a relatively small part of the network in order to receive reliable, predictable network bandwidth and computing power, and simply purchase more CPS Coins when they need to scale up their application. Furthermore, because of the zero fee, there is no network development cost, except for the initial purchase of CPS Coins. However, these CPS Coins can of course be sold at any  time in order to reclaim the initial investment if desired.
 
-
-
-
 ## Community Management
-### Bad Data and Arbitration
+
+### Data corruption and Arbitration
 The system will combine smart contracts with legally binding arbitration methods. According to the arbitration dispute resolution mechanism provided by the network, anyone can initiate a ruling that an arbitrary storage file is illegal, and the file will be deleted if the corresponding storage and hosting is in violation of a law or other contract.
 
 The CPS storage protocol will allow block producers to delete any files that are required by law or arbitration to be deleted. Not all block producers must comply with the same laws and regulations. Instead, the community of token holders decides whether or not the block producer is deleting the file correctly and reasonably. Producers with improper behavior may be rejected under the arbitration of the blockchain constitution and lose their status as producers.
@@ -243,7 +245,7 @@ Once online, the hot wallet will include the following basic features of the hot
 In addition, the hot wallet will also have the following features
 * Display the current polled producer of the token in the wallet
 
-## Other facilities
+## Other Facilities
 In the future, CPS will also provide facilities such as exchanges. In addition, we wholeheartedly welcome community developers to submit excellent facilities. If the facility submitted by the developer can pass the code review and test, then the facility will have the opportunity to be upgraded to become the official designated facility of CPS to better reward the community.
 
 
