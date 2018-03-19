@@ -11,26 +11,26 @@ This white paper is intended to convey technology-related information only and d
 
 1. Although the CPS team (hereinafter, "the team") does its utmost to make the contents of this white paper as accurate as possible in the design and implementation of the system, this white paper does not guarantee the release of the code or services provided because the technical code of the project is continuously evolving. Also, the team does not guarantee that the white paper reflects the changes in the code in real time.
 
-2. As a free open source project, the team does not guarantee the accuracy of the released code and the services provided. __This project is only released "as is".__ The team defaults readers of this white paper and users of this code base have sufficient legal knowledge, technical knowledge and development capabilities to ensure the correct and safe operation of the code. __The team shall not be liable for any loss caused by using this project code.__ These losses include, but are not limited to:
+2. As a free open source project, the team does not guarantee the accuracy of the released code and the services provided. __This project is only released "as is".__ The team defaults readers of this white paper and users of the software have sufficient legal knowledge, technical knowledge and development capabilities to ensure the correct and safe operation of the code. __The team shall not be liable for any loss caused by using this project code.__ These losses include, but are not limited to:
 
     * Direct or indirect losses due to failure to achieve an expected goal
-    * Direct or indirect losses due to inconsistency in code or logic between this white paper and this code base
-    * Direct or indirect losses due to errors or bugs in this code base or services related to this code base
-    * Direct or indirect losses caused by infringement of third parties due to this white paper, this code base, and services related to this code base
+    * Direct or indirect losses due to inconsistency between this white paper and the actual code
+    * Direct or indirect losses due to errors or bugs in the software or related services  
+    * Direct or indirect losses caused by infringement of third parties due to this white paper, the software, and services related to the software
 
-3. This white paper, this code base, and the services associated with this code base do not constitute any investment advice. Any individual or team, without authorization, may not use any name of the team, members of this team, this white paper author and contributors, white papers, and this code base for any form of marketing. No individual or team, without authorization, may not publish false information about the team, the team members, the white paper writer and contributors, and the third party team.
+3. This white paper, the software, and the software services associated do not constitute any investment advice. Any individual or team, without authorization, may not use any name of the team, members of this team, this white paper author and contributors, white papers, and the software for any form of marketing. No individual or team, without authorization, may not publish false information about the team, the team members, the white paper writer and contributors, and the third party team.
 
 4. __"CPS Coin" means "CPS Token" or "CPS Token" without any right, purpose, property, function or characteristic, explicit or implicit.__
 
-5. The words "to be", "to be", and "possible" in this white paper only represent functional or performance predictability or design ideas, not as a team commitment.
+5. The words "to be", "to be", and "possible" in this white paper only represent functional or performance predictability or design ideas, but not as any form of commitments from the team.
 
 # Introduction
 
-We have examined massive blockchain project white papers. In the selection of the architecture, we learned a lot about how EOS.IO was built, and we dig deeper into its technical characteristics in its white paper. In the end, CHIPS founding team members agreed that the technical characteristics of EOS.IO are highly consistent with the CPS Commercial White Paper, and we will maintain the strategy of synchronizing with the EOS.IO version later.
+We have examined massive blockchain project white papers. As we are selecting the architecture, we learned a lot about from EOS, and we dig deeper into its technical characteristics described in its white paper. As a result, CPS team members agreed that the technical characteristics of EOS.IO are highly consistent with our goals, and we will maintain the strategy of synchronizing with the EOS.IO version later.
 
 In addition, due to the recent delay in the development of multi-threaded EOS development, we will continue to monitor and follow-up related progress. Currently, we will adopt the single-threaded mode for the time being, because a single thread is enough to support the current user volume even visible in the future. At the right time, we will upgrade the technology engine to handle the larger blockchain network applications in a stable and safe manner.
 
-The following will focus on the potential of CPS code from a technical point of view, and in the "CPS Commercial White Paper" on the mining of the technical logic point corresponding to the corresponding commercial extension, and in the CPS Coin backbone network plant code foreshadowing, with With the height of cooperation with the CHIPS Ecosystem 2.0 version both the establishment of the Digital Kingdom.
+The following will focus on the potentials of CPS code from a technical perspective. Besides, we will walk through keypoints along with their implications in the CPS Business Whitepaper. Regarding the CPS backbone network, we will also build a highly elastic architecture . All these measures will be taken to establish the Digital Kingdom envisioned in the CPS Ecosystem v2.0.
 
 # Terminology
 
@@ -250,6 +250,8 @@ In the future, CPS will also provide facilities such as exchanges. In addition, 
 
 
 # Conclusion
-The team intends to build an ecosystem based on the CPS blockchain operating system. Among them, the application layer is a blockchain distributed system with complete ecological facilities; the underlying CPS system provides databases, account permissions, scheduling, authentication, and Internet application communication services for our self-built ecosystems and external developers. The underlying system greatly improves the development efficiency of blockchain applications. DAPP can be accessed from the browser or downloaded from the APP store. We will establish a set of developer incentives to encourage more developers to continue to create higher-value decentralized applications, thus building a positive feedback ecosystem for the blockchain developer community. We sincerely invite the community to jointly build CHIPS Digital Kingdom 2.0, thank you for your attention and support.
+The team intends to build an ecosystem based on the CPS blockchain operating system. Among them, the application layer is a blockchain distributed system with complete ecological facilities; the underlying CPS system provides databases, account permissions, scheduling, authentication, and Internet application communication services for our self-built ecosystems and external developers. The underlying system greatly improves the development efficiency of blockchain applications. DAPP can be accessed from the browser or downloaded from the APP store. We will establish a set of developer incentives to encourage more developers to continue to create higher-value decentralized applications, thus building a positive feedback ecosystem for the blockchain developer community. We sincerely invite the community to collectively build CHIPS Digital Kingdom 2.0. 
+
+Thank you for your attention and support!
 
 ![CPS Coin Architecture](architecture.png)
