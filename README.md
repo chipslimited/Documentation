@@ -2,9 +2,6 @@
 
 This repository hosts all CPS Coin related techincal documents. 
 
-## Technical White Paper
-
-### [Technical White Paper](tech_whitepaper.md)
 
 # Translation Guide
 
